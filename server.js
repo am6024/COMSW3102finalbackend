@@ -15,5 +15,5 @@ mongoose.connect(process.env.URI);
 app.use('/notes', noteRoutes);
 const port = process.env.PORT
 app.listen(port, () => {
-  console.log('Server is running on port ${port}');
+  console.log(`Server is running on port ${port}`);
 });
