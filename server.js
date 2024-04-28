@@ -13,7 +13,7 @@ const noteRoutes = require('./routes/note-routes')
 mongoose.connect(process.env.URI);
 
 app.use('/notes', noteRoutes);
-
-app.listen(8000, () => {
-  console.log('Server is running on port 8000');
+const port = process.env.PORT
+app.listen(port, () => {
+  console.log('Server is running on port ${port}');
 });
